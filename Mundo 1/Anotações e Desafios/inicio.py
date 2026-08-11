@@ -1,0 +1,1 @@
+# Aqui dentro teremos todas as aulas e desafios resolvidos do curso. 

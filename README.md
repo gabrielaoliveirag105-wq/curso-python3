@@ -9,3 +9,6 @@
  - [x] **Mundo 2:**
  - [x] **Mundo 3:**
 
+ ## Mundo 1: Fundamentos
+ Aulas assistidas e conceitos práticos aplicados até o momento:
+

@@ -1,0 +1,15 @@
+print('---------- DESAFIO 04 ----------')
+# Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas as informações possíveis sobre ele.
+
+n = input('Digite algo: ')
+print(f'O tipo primitivo desse valor é {type(n)}.')
+print(f'Contém apenas letras? {n.isalpha()}')
+print(f'Contém apenas números? {n.isnumeric()}')
+print(f'Contém letras e números? {n.isalnum()}')
+print(f'Todas as letras são maiúsculas? {n.isupper()}')
+print(f'Todos os caracteres podem ser exibidos? {n.isprintable()}')
+print(f'Contém apenas espaços? {n.isspace()}')
+print(f'Todas as letras são minúsculas? {n.islower()}')
+print(f'Contém apenas dígitos? {n.isdigit()}')
+print(f'Contém apenas caracteres decimais? {n.isdecimal()}')
+print(f'Está captalizado? {n.istitle()}')

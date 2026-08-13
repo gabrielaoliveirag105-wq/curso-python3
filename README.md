@@ -16,7 +16,7 @@
  Sintaxe básica da linguagem, interação com usuário e criação de variáveis.
 
  * **Comandos aprendidos:** `print()`, `input()` - escreva/leia
- * **Código exemplo:**O f antes das aspas em Python serve para criar uma f-string (string formatada).
+ * **Código exemplo:** 
     ``` python
     nome = input('Qual é o seu nome? ')
     print('Olá', nome, '! Prazer em te conhecer!')
@@ -26,6 +26,7 @@ Configuração do ambiente de desenvolvimento para escrever os códigos.
 
 ### Aula 06 - Tipos Primitivos e Saídas de Dados
 Aprendi a converter os dados para o tipo correto e usar a máscara de formatação `.format()`.
+
 * **Tipos vistos:** 
     - `int`: números inteiros (3, 6, 89, -0, 12)
     - `float`: números reais (-3.5, 2.1, 67.8, 0.0)

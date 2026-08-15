@@ -28,10 +28,10 @@
   Aprendi a converter os dados para o tipo correto e usar a máscara de formatação `.format()`.
 
   * **Tipos vistos:** 
-  - `int`: números inteiros (3, 6, 89, -0, 12)
-  - `float`: números reais (-3.5, 2.1, 67.8, 0.0)
-  - `bool`: valores lógicos (True ou False)
-  - `str`: tudo que está entre  aspas simples ou duplas ('Olá', '78', '3.5')
+    - `int`: números inteiros (3, 6, 89, -0, 12)
+    - `float`: números reais (-3.5, 2.1, 67.8, 0.0)
+    - `bool`: valores lógicos (True ou False)
+    - `str`: tudo que está entre  aspas simples ou duplas ('Olá', '78', '3.5')
   * **Código exemplo:**
   ``` python
   n1 = int(input('Escolha um número: '))

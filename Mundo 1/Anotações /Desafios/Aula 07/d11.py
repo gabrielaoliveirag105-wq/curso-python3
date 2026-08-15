@@ -6,4 +6,4 @@ l = float(input('E qual a largura dela (metros): '))
 area = l * a
 tinta = area / 2 
 
-print(f'\nA largura é {l}m e a altura é {a}m \nSua área total vale {area}m \nPara pintar a área toda será preciso de {tinta} litros de tinta.')
+print(f'\nA largura é de {l}m e a altura é de {a}m \nSua área total vale {area}m² \nPara pintar a área toda será preciso de {tinta} litros de tinta.')

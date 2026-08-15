@@ -2,6 +2,8 @@ print('------ DESAFIO 09 ------')
 # Faça um programa que leia um número inteiro qualquer e mostre na tela sua tabuada
 
 num = int(input('Você quer ver a tabuada de qual número: '))
+
+print('-'*12)
 print(f'{num} x 0 = {num*0}')
 print(f'{num} x 1 = {num*1}')
 print(f'{num} x 2 = {num*2}')
@@ -13,3 +15,4 @@ print(f'{num} x 7 = {num*7}')
 print(f'{num} x 8 = {num*8}')
 print(f'{num} x 9 = {num*9}')
 print(f'{num} x 10 = {num*10}')
+print('-'*12)

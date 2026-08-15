@@ -47,10 +47,19 @@ Aprendi a converter os dados para o tipo correto e usar a máscara de formataç�
     #### Operadores Aritméticos 
     | Operador | Operação | Exemplo | Resultado |
     |   ---    |     ---  |   ---   |    ---    |
-    |   `+`    | `Àdição` | `5 + 2` |    `7`    |
+    |   `+`    | `Adição` | `5 + 2` |    `7`    |
     |   `-`    | `Subtra.`| `5 - 2` |    `3`    |
     |   `*`    | `Multp.` | `5 * 2` |    `10`   |
     |   `/`    | `Divisão`| `5 / 2` |    `2.5`  |
     |   `//`   | `Div.Int`| `5 // 2`|    `2`    |
     |   `%`    |`Rest.Div`| `5 % 2` |    `1`    |
-    |   `**`   |`Potencia`| `% ** 5`|    `25`   |
+    |   `**`   |`Potencia`| `5 ** 5`|    `25`   |
+
+    #### Ordem de Precedência
+    Quem vamos resolver primeiro em uma equação? 
+
+    1. **`()` Parenteses:**Tudo dentro dele é resolvido primeiro.
+    2. **`**` Potência:**Logo em seguida vem a potência.
+    3. **`*`, `/`, `//`, `%` Mult, Div, Div.Inteira, Resto.Div:**Possuem a mesma importância, e são resolvidas na ordem que aparecem.
+    4. **`+`,`-` Adição e Subt.:**Realizada por último.
+     

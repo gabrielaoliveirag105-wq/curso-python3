@@ -40,5 +40,12 @@ Aprendi a converter os dados para o tipo correto e usar a máscara de formataç�
     print(f'A soma entre {n1} e {n2} vale {soma}.')
     ```
     * O uso do `f` antes das aspas em Python serve para criar uma `f-string` (string formatada).
-    
+
+    ### Aula 07 - Operadores Aritméticos e Ordem de Precedência
+    Entendi a ordem de precedência que o computador utiliza para fazer contas e como realizar operações matemáticas básicas.
+
+    #### Operadores Aritméticos 
+    | Operador | Operação | Exemplo | Resultado |
+    |   ---    |     ---  |   ---   |    ---    |
+    | 
 

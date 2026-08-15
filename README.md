@@ -32,6 +32,7 @@
     - `float`: números reais (-3.5, 2.1, 67.8, 0.0)
     - `bool`: valores lógicos (True ou False)
     - `str`: tudo que está entre  aspas simples ou duplas ('Olá', '78', '3.5')
+    
   * **Código exemplo:**
   ``` python
   n1 = int(input('Escolha um número: '))

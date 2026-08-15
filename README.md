@@ -58,8 +58,8 @@ Aprendi a converter os dados para o tipo correto e usar a máscara de formataç�
     #### Ordem de Precedência
     Quem vamos resolver primeiro em uma equação? 
 
-    1. **`()` Parenteses:**Tudo dentro dele é resolvido primeiro.
-    2. **`**` Potência:**Logo em seguida vem a potência.
-    3. **`*`, `/`, `//`, `%` Mult, Div, Div.Inteira, Resto.Div:**Possuem a mesma importância, e são resolvidas na ordem que aparecem.
-    4. **`+`,`-` Adição e Subt.:**Realizada por último.
+    1. **`()` Parenteses:** Tudo dentro dele é resolvido primeiro.
+    2. **`**` Potência:** Logo em seguida vem a potência.
+    3. **`*`, `/`, `//`, `%` Mult, Div, Div.Inteira, Resto.Div:** Possuem a mesma importância, e são resolvidas na ordem que aparecem.
+    4. **`+`,`-` Adição e Subt.: **Realizada por último.
      

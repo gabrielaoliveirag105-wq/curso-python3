@@ -70,6 +70,7 @@
   #### Formas de Importação
 
   * **Importação Geral (`import`):** Traz a biblioteca inteira para o projeto.
+
     ```python
     import math
     num = int(input('Digite um número: '))
@@ -78,6 +79,7 @@
     ```
   * **Importação Otimizada (`from..import`):** Traz somente as funções específicas que você vai utilizar.
     * **Dica:** Para importar mais de uma função ao mesmo tempo, separamos elas com uma **vírgula**.
+    
     ```python
     from math import sqrt, floor
     num = int(input('Digite um número: '))

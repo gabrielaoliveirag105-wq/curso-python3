@@ -63,4 +63,32 @@
   2. **`**` Potência:** Logo em seguida vem a potência.
   3. **`*`, `/`, `//`, `%` Mult, Div, Div.Inteira, Resto.Div:** Possuem a mesma importância, e são resolvidas na ordem que aparecem.
   4. **`+`,`-` Adição e Subt.:** Realizada por último.
+
+  ### Aula 08 - Utilizando Módulos (Bibliotecas)
+  Nesta aula aprendi a expandir as capacidades do Python importando módulos. Entendi a diferença entre trazer todas as ferramentas de uma biblioteca, ou importar somente as que eu vou usar.
+
+  #### Formas de Importação
+
+  * **Importação Geral (`import`):** Traz a biblioteca inteira para o projeto.
+    ```python
+    import math
+    num = int(input('Digite um número: '))
+    raiz = math.sqrt(num)
+    # É obrigatório usar o 'math' antes do comando
+    ```
+  * **Importação Otimizada (`from..import`):** Traz somente as funções específicas que você vai utilizar.
+    * **Dica:** Para importar mais de uma função ao mesmo tempo, separamos elas com uma **vírgula**.
+    ```python
+    from math import sqrt, floor
+    num = int(input('Digite um número: '))
+    raiz = sqrt(num) # Não tem necessidade do 'math'
+    print(f'A raiz é {raiz:.2f}, e arredondada para baixo é {floor(raiz)}.')
+    ```
+
+  #### Alguns módulos vistos:
+  * `math`: Biblioteca de funções matemáticas.
+  * `random`: Biblioteca para gerar e escolher números/itens aleatoriamente.
+  * `floor()`: Função que arredonda um número para baixo.
+  * `pow()` : Função para cálculo de potência.
+  * `trunc()`: Elimina os valores após a vírgula
     

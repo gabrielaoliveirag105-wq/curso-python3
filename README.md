@@ -13,6 +13,7 @@
   Aulas assistidas e conceitos práticos aplicados até o momento:
 
   ### Aula 04 - Primeiros comandos em Python
+  
   Sintaxe básica da linguagem, interação com usuário e criação de variáveis.
 
   * **Comandos aprendidos:** `print()`, `input()` - escreva / leia
@@ -25,6 +26,7 @@
   Configuração do ambiente de desenvolvimento para escrever os códigos.
 
   ### Aula 06 - Tipos Primitivos e Saídas de Dados
+
   Aprendi a converter os dados para o tipo correto e usar a máscara de formatação `.format()`.
 
   * **Tipos vistos:** 
@@ -43,6 +45,7 @@
   * O uso do `f` antes das aspas em Python serve para criar uma `f-string` (string formatada).
 
   ### Aula 07 - Operadores Aritméticos e Ordem de Precedência
+
   Entendi a ordem de precedência que o computador utiliza para fazer contas e como realizar operações matemáticas básicas.
 
   #### Operadores Aritméticos 
@@ -65,6 +68,7 @@
   4. **`+`,`-` Adição e Subt.:** Realizada por último.
 
   ### Aula 08 - Utilizando Módulos (Bibliotecas)
+
   Nesta aula aprendi a expandir as capacidades do Python importando módulos. Entendi a diferença entre trazer todas as ferramentas de uma biblioteca, ou importar somente as que eu vou usar.
 
   #### Formas de Importação
@@ -94,7 +98,8 @@
   * `pow()` : Função para cálculo de potência.
   * `trunc()`: Elimina os valores após a vírgula.
 
-  ### Aula 08 - Manipulando Cadeias de Texto (Strings)
+  ### Aula 09 - Manipulando Cadeias de Texto (Strings)
+
   Nesta aula aprendi a a manipular textos em Python. Para o computador, uma frase é uma sequência de caracteres guardados em posições (índices), que iniciam em **0**, e não em **1**.
 
   **Mapa de Índice da frase:** `Curso em Vídeo Python`

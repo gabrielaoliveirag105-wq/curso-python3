@@ -13,7 +13,7 @@
   Aulas assistidas e conceitos práticos aplicados até o momento:
 
   ### Aula 04 - Primeiros comandos em Python
-  
+
   Sintaxe básica da linguagem, interação com usuário e criação de variáveis.
 
   * **Comandos aprendidos:** `print()`, `input()` - escreva / leia
@@ -106,11 +106,16 @@
   * No Python, a contagem real dos índices começa em 0: `0,1,2,3,4...até 20` (Total de 21 caracteres).
   * *Regra:* Para o Python, letras maiúsculas são completamentes diferentes das minúsculas (`A` , `a`).
 
-  ### Fatiamneto (Pegar pedaços da string)
+  ### Fatiamento (Pegar pedaços da string)
   ```python
   frase = 'Curso em Vídeo Python
-  print(frase[9]) # Retorna 'V'. A contagem inician e 0, pegando o caractere da posição 9.
+  print(frase[9]) # Retorna 'V'. A contagem inicia em 0, pegando o caractere da posição 9.
   print(frase[9:14]) # Retorna 'Vídeo'. Vai do 9 ao 13. O último valor (14) sempre fica de fora.
+  print(frase[9:21]) # Retorna 'Vídeo Python'. Vai de 9 até o fim do texto (índice 20)
+  print(frase[9:21:2]) # Retorna 'VdoPto'. Fatia de 9 ao 20 pulando de 2 em 2.
+  print(frase[:5]) # Retorna 'Curso'. Quando não há inicio, ele começa no 0 e vai até 4.
+  print(frase[15:]) # Retorna 'Python'. Começa no índice 15 e vai até o final.
+  print(frase[9::3]) # Retorna 'Venty'. Começa em 9, vai até o final (pois não mostra onde ele dev parar) pulando de 3 em 3.
   ```
 
     

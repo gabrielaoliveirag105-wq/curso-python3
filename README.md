@@ -92,5 +92,20 @@
   * `random`: Biblioteca para gerar e escolher números/itens aleatoriamente.
   * `floor()`: Função que arredonda um número para baixo.
   * `pow()` : Função para cálculo de potência.
-  * `trunc()`: Elimina os valores após a vírgula
+  * `trunc()`: Elimina os valores após a vírgula.
+
+  ### Aula 08 - Manipulando Cadeias de Texto (Strings)
+  Nesta aula aprendi a a manipular textos em Python. Para o computador, uma frase é uma sequência de caracteres guardados em posições (índices), que iniciam em **0**, e não em **1**.
+
+  **Mapa de Índice da frase:** `Curso em Vídeo Python`
+  * No Python, a contagem real dos índices começa em 0: `0,1,2,3,4...até 20` (Total de 21 caracteres).
+  * *Regra:* Para o Python, letras maiúsculas são completamentes diferentes das minúsculas (`A` , `a`).
+
+  ### Fatiamneto (Pegar pedaços da string)
+  ```python
+  frase = 'Curso em Vídeo Python
+  print(frase[9]) # Retorna 'V'. A contagem inician e 0, pegando o caractere da posição 9.
+  print(frase[9:14]) # Retorna 'Vídeo'. Vai do 9 ao 13. O último valor (14) sempre fica de fora.
+  ```
+
     

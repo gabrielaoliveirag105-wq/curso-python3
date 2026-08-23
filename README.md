@@ -139,14 +139,14 @@
   print(frase.lstrip()) # Remove espaços inúteis apenas do lado esquerdo (Left)
   ```
 
-  * Combinando métodos: *É possível juntar transformações em sequência, o código `print(frase.upper().count('o'))` vai retornar `0`, pois o `.upper` transformou toda a frase em maiúscula, logo, não existe mais letras minúsculas para serem contadas.
+  *Combinando métodos:* É possível juntar transformações em sequência, o código `print(frase.upper().count('o'))` vai retornar `0`, pois o `.upper` transformou toda a frase em maiúscula, logo, não existe mais letras minúsculas para serem contadas.
 
   #### Divisão e Junção
   ```python
   print(frase.split()) # Divide a frase onde existem espaços, criando uma lista de palavras com novos índices.
   print('-'.join(frase)) # Junta os elementos inserindo o hífen entre cada caractere ('C-u-r-s-o...').
   ```
-  * Dica para texto:* Para escrevar um texto com várias linhas sem precisar escrever inúmeros `print()`, coloque o texto dentro de três aspas duplas ***(""")***, abrindo e fechando seu texto.
+  *Dica para texto:* Para escrevar um texto com várias linhas sem precisar escrever inúmeros `print()`, coloque o texto dentro de três aspas duplas ***(""")***, abrindo e fechando seu texto.
   ```python
   print("""Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica.
   Ele sobreviveu não apenas a muitas décadas, mas também à transição 

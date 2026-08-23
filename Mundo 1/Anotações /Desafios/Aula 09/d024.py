@@ -1,11 +1,10 @@
 print('---------- DESAFIO 24 ----------')
 # Crie um programa que leia o nome de uma cidade e diga se ela começa ou não com o nome "SANTO"
 
-cidade = str(input('Em que cidade você mora? '))
-city = cidade.upper().strip().split()
-pose = city[0] == 'SANTO' # procura SANTO no início
-print(f'Você mora na cidade de {cidade} ')
-print(f'Essa cidade possui "SANTO" no nome? {pose}')
+cidade = str(input('Em que cidade você mora? ')).strip()
+print('Essa cidade possui "SANTO" no nome? ')
+print(cidade[:5].upper() == 'SANTO') # procura SANTO no início
+
 
 
 

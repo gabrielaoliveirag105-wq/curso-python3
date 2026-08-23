@@ -6,10 +6,8 @@ nome = Ana Maria Da Silva
 primeiro = Ana
 último = Souza'''
 
-nome = str(input('Digite seu nome completo: '))
+nome = str(input('Digite seu nome completo: ')).strip()
 
-primeiro = (nome.split()[0])
-ultimo = (nome.split()[-1])
-
-print(f'Primeiro: {primeiro}')
-print(f'Último: {ultimo}')
+print('Muito prazer em te conhecer!')
+print(f'Seu primeiro nome é: {nome[0]}')
+print(f'E o último é: {nome[-1]}')

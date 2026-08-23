@@ -106,7 +106,7 @@
   * No Python, a contagem real dos índices começa em 0: `0,1,2,3,4...até 20` (Total de 21 caracteres).
   * *Regra:* Para o Python, letras maiúsculas são completamentes diferentes das minúsculas (`A` , `a`).
 
-  ### Fatiamento (Pegar pedaços da string)
+  #### Fatiamento (Pegar pedaços da string)
   ```python
   frase = 'Curso em Vídeo Python
   print(frase[9]) # Retorna 'V'. A contagem inicia em 0, pegando o caractere da posição 9.
@@ -117,5 +117,43 @@
   print(frase[15:]) # Retorna 'Python'. Começa no índice 15 e vai até o final.
   print(frase[9::3]) # Retorna 'Venty'. Começa em 9, vai até o final (pois não mostra onde ele dev parar) pulando de 3 em 3.
   ```
+  #### Análise de String
+  ```python
+  print(len(frase)) # Retorna 21. Verifica o tamanho total da frase em caracteres.
+  print(frase.count('o')) # Retorna 3. Conta quantas letras 'o' minúsculas existem na frase.
+  print(frase.count('o',0,14)) # Retorna 2. Conta a letra 'o' apenas no pedaço que vai do índice 0 ao 13.
+  print(frase.find('deo')) # Retorna 11. Diz em qual posição o pedaço 'deo' começou.
+  print(frase.find('Android')) # Retorna -1. Quando você procura algo que não existe, o resultado é sempre -1.
+  print('Curso' in frase) # Retorna True. Verifica se a palavra existe na frase e retorna True ou False.
+  ```
+
+  #### Transformação de Strings
+  ```python
+  print(frase.replace('Python', 'Android')) # Substitui 'Python' por 'Android' apenas na exibição.
+  print(frase.upper()) # Transforma todas as letras em MAIÚSCULAS.
+  print(frase.lower()) # Transforma todas as letras em minúsculas.
+  print(frase.capitalize()) # Joga tudo para minúsculo e deixa SÓ o primeiro caractere da frase em maiúsculo.
+  print(frase.title()) # Analisa os espaços e transforma a primeira letra de CADA palavra em maiúscula.
+  print(frase.strip()) # Remove espaços inúteis antes do início e depois do fim do texto.
+  print(frase.rstrip()) # Remove espaços inúteis apenas do lado direito (Right).
+  print(frase.lstrip()) # Remove espaços inúteis apenas do lado esquerdo (Left)
+  ```
+
+  * Combinando métodos: *É possível juntar transformações em sequência, o código `print(frase.upper().count('o'))` vai retornar `0`, pois o `.upper` transformou toda a frase em maiúscula, logo, não existe mais letras minúsculas para serem contadas.
+
+  #### Divisão e Junção
+  ```python
+  print(frase.split()) # Divide a frase onde existem espaços, criando uma lista de palavras com novos índices.
+  print('-'.join(frase)) # Junta os elementos inserindo o hífen entre cada caractere ('C-u-r-s-o...').
+  ```
+  * Dica para texto:* Para escrevar um texto com várias linhas sem precisar escrever inúmeros `print()`, coloque o texto dentro de três aspas duplas ***(""")***, abrindo e fechando seu texto.
+  ```python
+  print("""Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica.
+  Ele sobreviveu não apenas a muitas décadas, mas também à transição 
+  para a editoração eletrônica.""")
+  ```
+
+
+
 
     

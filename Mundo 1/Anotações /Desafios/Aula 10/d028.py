@@ -6,13 +6,15 @@ from random import randint
 from time import sleep
 sleep(1.0)
 
-print('------ VAMOS JOGAR? -------')
+print('-'*60)
+print('     VAMOS JOGAR?     ')
 print('Estou pensando em um número entre 0 e 5.... Tente adivinhar!')
-
+print('-'*60)
 
 computador = randint(0,5)
-num = int(input('Em que número eu pensei? '))
-if (num == computador):
+jogador = int(input('Em que número eu pensei? '))
+
+if (jogador == computador):
     print(f'Parabéns, eu pensei exatamente no número {computador} e você ganhou. \nVamos de novo que agora eu vou ganhar!')
 else:
     print(f'Eu sou ótimo nesse jogo, pensei no número {computador}.')

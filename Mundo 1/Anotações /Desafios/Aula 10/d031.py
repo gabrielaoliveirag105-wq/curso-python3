@@ -18,4 +18,4 @@ if (distancia <= 200):
     print(f'O percurso da sua viagem tem {distancia}Km.\nO valor da passagem ficou R${passagem:.2f}.')
 else:
     passagem = distancia * 0.45
-    print(f'O percurso da sua viagem tem {distancia}Km.\nO valor da passagem ficou R${passagem:.2f}')
+    print(f'O percurso da sua viagem tem {distancia}Km.\nO valor da passagem será R${passagem:.2f}.')

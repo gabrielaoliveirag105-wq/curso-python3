@@ -29,7 +29,7 @@ print('\033[0;33;44m') # 0 - estilo, 33 - texto, 44 - backgorund
 # Lista de cores de fundo (background):
 """
 40 - Branco
-41 - Vremelho
+41 - Vermelho
 42 - Verde 
 43 - Amarelo
 44 - Azul

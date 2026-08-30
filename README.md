@@ -152,6 +152,45 @@
   Ele sobreviveu não apenas a muitas décadas, mas também à transição 
   para a editoração eletrônica.""")
   ```
+  ### Aula 10 - Estruturas Condicionais (Parte 1)
+  Nesta aula aprendi a criar desvios com as estruturas condicionais, permitindo que o programa siga caminhos diferentes, 
+
+  * **Identação:** É o recuo do código para direita. No Python, ela serve para dizer quais comandos estão no bloco `if`, e os que estão no `else.` Tudo fora desse bloco SEMPRE irá aparecer, idependente do resultado da condição.
+
+  #### Condicionais Simples
+  Possui apenas o bloco `if` (Se). Se a condição for falsa, o programa ignora o bloso e segue em frente.
+
+  ```python
+  nome = str(input('Digite seu nome: ))
+  if nome == 'Gabriela':
+    print('Nossa, que nome lindo!') # esse bloco só acontece se o nome for Gabriela
+  print(f'Bom dia, {nome}!') # esse bloco SEMPRE vai acontecer, está fora do bloco identado.
+  ```
+  #### Condicionais Compostas
+  Possui o bloco `if` (Se) e o bloco `else` (Senão), abrindo dois caminhos possíveis no programa.
+
+  ```python
+  tempo = int(input('Quanto tempo tem seu carro? '))
+  if tempo <= 5:
+    print(f'Seu carro só tem {tempo} anos, está novinho') # executa se for Verdadeiro
+  else:
+    print(f'Seu carro já tem {tempo} anos, hora de ficar de olho.') # executa se for Falso
+  print('--------- FIM DO PROGRAMA ------------')
+  ```
+  * **OBS:** As duas condições nunca acontecem juntas ao mesmo tempo.
+
+  #### Exemplo Prático: Cálculo de Média
+  ```python
+  n1 = float(input('Digite a primeira nota: '))
+  n2 = float(input('Digite a segunda nota: '))
+  media = (n1 + n2) / 2
+  print(f'A média do aluno foi {media:.1f}')
+
+  if media <= 6.0:
+    print(f'Sua média foi {media:.1f}, você consegue melhorar um pouquinho.')
+  else:
+    print(f'Oba! Sua média foi {media:.1f}, continue assim!')
+  ```
 
 
 

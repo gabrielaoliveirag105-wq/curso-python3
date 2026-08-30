@@ -5,7 +5,7 @@
   Esse repositório foi criado para registrar toda a minha evolução, códigos e desafios com a linguagem Python.
 
   ## Progresso do Curso
-  - [ ] **Mundo 1:** Fundamentos (Em andamento..)
+  - [x] **Mundo 1:**
   - [ ] **Mundo 2:**
   - [ ] **Mundo 3:**
 

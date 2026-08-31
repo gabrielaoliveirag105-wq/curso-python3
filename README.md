@@ -212,7 +212,7 @@
   | `30`  | Branco   |   |       `40`    | Branco       |
   | `31`  | Vermelho |    |       `41`    | Vermelho     |
   | `32`  | Verde    |  #2ECC71  |       `42`    | Verde        |
-  | `33`  | Amarelo  |    |       `43`    | Amarelo      |
+  | `33`  | Amarelo  |  #F1C40F  |       `43`    | Amarelo      |
   | `34`  | Azul     |    |       `44`    | Azul         |
   | `35`  | Roxo     |   |       `45`    | Lilás / Roxo |
   | `36`  | Ciano    |    |       `46`    | Ciano        |

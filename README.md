@@ -158,10 +158,10 @@
   * **Identação:** É o recuo do código para direita. No Python, ela serve para dizer quais comandos estão no bloco `if`, e os que estão no `else.` Tudo fora desse bloco SEMPRE irá aparecer, idependente do resultado da condição.
 
   #### Condicionais Simples
-  Possui apenas o bloco `if` (Se). Se a condição for falsa, o programa ignora o bloso e segue em frente.
+  Possui apenas o bloco `if` (Se). Se a condição for falsa, o programa ignora o bloco e segue em frente.
 
   ```python
-  nome = str(input('Digite seu nome: ))
+  nome = str(input('Digite seu nome: '))
   if nome == 'Gabriela':
     print('Nossa, que nome lindo!') # esse bloco só acontece se o nome for Gabriela
   print(f'Bom dia, {nome}!') # esse bloco SEMPRE vai acontecer, está fora do bloco identado.
@@ -177,7 +177,8 @@
     print(f'Seu carro já tem {tempo} anos, hora de ficar de olho.') # executa se for Falso
   print('--------- FIM DO PROGRAMA ------------')
   ```
-  * **OBS:** As duas condições nunca acontecem juntas ao mesmo tempo.
+  * **OBS:** As duas condições nunca acontecem juntas ao mesmo tempo. 
+  Ou será o bloco True, ou o False.
 
   #### Exemplo Prático: Cálculo de Média
   ```python
@@ -191,8 +192,28 @@
   else:
     print(f'Oba! Sua média foi {media:.1f}, continue assim!')
   ```
+  ### Aula 11 - Cores no Terminal
+  Nesta aula aprendi a usar o padrão **ANSI (escape sequence)** para adicionar cores e estilos aos textos exibidos no terminal.
 
+  #### Estrutura do Código ANSI
+  O código sempre começa com `\033[` e termina coma letra `m`. Entre eles, separamos por ponto e vírgula os códigos de **Estilo;Texto;Fundo**.
+  * **Exemplo:** `print(\033[0;33;44m)` \ `0` (Estilo), `33` (Cor do Texto), `44` (Cor de Fundo).
 
+  #### Tabelas de Referência ANSI
+  | Código | Estilo de Texto|
+  | ---    |    ---         | 
+  | `0`    |   **Padrão**   |
+  | `1`    |   **Negrito**  |
+  | `4`    | **Sublinhado** |
+  | `7`    |   **Inversão** | # (inverte as cores de texto e fundo)
 
-
-    
+  | Código| Texto    | Cor do Texto | | Código Fundo | Cor de Fundo |
+  | :---: | :---:   |    :---:     |     :---:       |  :---        |
+  | `30`  | Branco   |              |       `40`     | Branco       |
+  | `31`  | Vermelho |              |       `41`     | Vermelho     |
+  | `32`  | Verde    |              |       `42`     | Verde        |
+  | `33`  | Amarelo  |              |       `43`     | Amarelo      |
+  | `34`  | Azul     |              |       `44`     | Azul         |
+  | `35`  | Roxo     |              |       `45`     | Lilás / Roxo |
+  | `36`  | Ciano    |              |       `46`     | Ciano        |
+  | `37`  | Cinza    |              |       `47`     | Cinza        |

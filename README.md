@@ -217,3 +217,37 @@
   | `35` | Roxo | | `45` | Lilás / Roxo |
   | `36` | Ciano (Azul Piscina) | | `46` | Ciano (Azul Piscina) |
   | `37` | Cinza | | `47` | Cinza |
+
+  #### Prática e Fechamento de Cores
+  * **DICA:** Sempre coloque `\033[m` no final do seu texto para **limpar a formatação**. Se não fizer isso, a cor vai continuar pintando todo o resto do terminal.
+
+  ```python
+  print('\033[4;31mOlá, Mundo!\033[m') # limita a cor apenas à frase
+
+  # O código 7 inverte as configurações originais (Texto vira Fundo e vice-versa)
+  print('\033[7;40mTexto preto com fundo branco\033[m') 
+  ```
+  #### Aplicando Cores em Variáveis e f-strigns
+  Podemos injetar os códigos ANSI diretamente dentro das chaves de uma f-string:
+
+  ```python
+  a = 3
+  b = 5
+  print(f'A soma dos valores \033[33m{a}\033[m e \033[34m{b}\033[m vale \033[31m{a+b}\033[m.')
+
+  nome = 'Gabriela'
+  print(f'Muito prazer te conhecer, \033[4;36m{nome}\033[m!')
+  ```
+  #### Organizando com Dicionários (Método Avançado)
+  Para não precisar ficar digitando códigos confusos no meio do texto, podemos criar um dicionário de cores. Isso deixa o código muito mais limpo e legível!
+
+  ```python
+  nome = 'Gabriela'
+  cores = {'limpa': '\033[m', 
+  'azul': '\033[34m', 
+  'amarelo': '\033[33m', 
+  'pretoebranco': '\033[7;40m'
+  }
+
+  print(f'Olá, {cores["amarelo"]}{nome}{cores["limpa"]}! Seja muito bem-vindo(a).')
+  ```

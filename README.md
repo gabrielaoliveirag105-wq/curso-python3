@@ -209,11 +209,11 @@
 
   | Código| Texto    | Cor do Texto |  Código Fundo | Cor de Fundo |
   | ---   | ---      |    ---       |     ---       |     ---      |
-  | `30`  | Branco   |:red_square:  |       `40`    | Branco       |
-  | `31`  | Vermelho |              |       `41`    | Vermelho     |
-  | `32`  | Verde    |              |       `42`    | Verde        |
-  | `33`  | Amarelo  |              |       `43`    | Amarelo      |
-  | `34`  | Azul     |              |       `44`    | Azul         |
-  | `35`  | Roxo     |              |       `45`    | Lilás / Roxo |
-  | `36`  | Ciano    |              |       `46`    | Ciano        |
-  | `37`  | Cinza    |              |       `47`    | Cinza        |
+  | `30`  | Branco   | `#FFFFFF`    |       `40`    | Branco       |
+  | `31`  | Vermelho | `#FF0000`    |       `41`    | Vermelho     |
+  | `32`  | Verde    | `#00FF00`    |       `42`    | Verde        |
+  | `33`  | Amarelo  | `#FFFF00`    |       `43`    | Amarelo      |
+  | `34`  | Azul     | `#0000FF`    |       `44`    | Azul         |
+  | `35`  | Roxo     | `#800080`    |       `45`    | Lilás / Roxo |
+  | `36`  | Ciano    | `#00FFFF`    |       `46`    | Ciano        |
+  | `37`  | Cinza    | `#D3D3D3`    |       `47`    | Cinza        |

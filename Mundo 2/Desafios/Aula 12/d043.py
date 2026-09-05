@@ -6,3 +6,18 @@ print('----- DESAFIO 43 ------')
 – 25 até 30: Sobrepeso
 – 30 até 40: Obesidade
 – Acima de 40: Obesidade Mórbida"""
+
+peso = float(input('Peso (kg): '))
+altura = float(input('Altura (m): '))
+imc = peso / (altura ** 2)
+
+if imc < 18.5:
+    print(f'IMC = {imc:.1f} - Abaixo do Peso' )
+elif imc < 25:
+    print(f'IMC = {imc:.1f} - Peso Ideal')
+elif imc < 30:
+    print(f'IMC = {imc:.1f} - Sobrepeso')
+elif imc < 40:
+    print(f'IMC = {imc:.1f} - Obesidade')
+else:
+    print(f'IMC = {imc:.1f} - ATENÇÃO! Obesidade Mórbida')

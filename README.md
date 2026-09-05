@@ -5,7 +5,7 @@
   Esse repositório foi criado para registrar toda a minha evolução, códigos e desafios com a linguagem Python.
 
   ## Progresso do Curso
-  - [x] **Mundo 1:** Fundamentos 
+  - [x] **Mundo 1:** Fundamentos *(Concluído! 🟢 )*
   - [ ] **Mundo 2:** Estruturas de Controle
   - [ ] **Mundo 3:**
 
@@ -250,4 +250,50 @@
   }
 
   print(f'Olá, {cores["amarelo"]}{nome}{cores["limpa"]}! Seja muito bem-vindo(a).')
+  ```
+  ## Mundo 2: Estruturas De Controle
+  Aulas assistidas e conceitos práticos aplicados nesta nova etapa: 
+
+  ### Aula 12 - Condições Aninhadas
+
+  Como o próprio nome sugere, é uma estrutura de condição colocada dentro da outra (como um ninho).
+
+  * **`elif` (else + if):** Significa "senão se". É usado quando precisamos tratar mais de dois caminhos possíveis.
+  
+  * **Regras de Sintaxe:**
+  * Todo bloco começa sempre com um `if`, sempre! Nunca começamos com um `elif`.
+  * Você pode usar quantos `elif` precisar dentro de um mesmo bloco.
+  * O bloco `else` no final é opcional (não é obrigatório caso não tenha necessidade do uso.)
+
+  #### Exemplo Prático 1: Status de Média Escolar
+
+  ```python
+  n1 = float(input('Primeira nota: '))
+  n2 = float(input('Segunda nota: '))
+  media = (n1 + n2) / 2
+
+  if media <= 4.0:
+    print(f'Sua nota foi {media:.1f} \nALUNO REPROVADO!')
+  elif media <= 6.0:
+    print(f'Sua nota foi {media:.1f} \nALUNO EM RECUPERAÇÃO!')
+  else:
+    print(f'Sua nota foi {media:.1f} \nALUNO APROVADO!')
+  print('Continua sempre estudando')
+  ```
+
+  #### Exemplo Prático 2: Análise de Nomes Populares
+  Testando o uso do `elif` combinado com os operadores lógicos `or` e o operador de pertencimento `in`:
+
+  ```python
+  nome = str(input('Digite seu nome: '))
+
+  if nome == 'Gabriela':
+      print('Uau, que nome lindo!')
+  elif nome == 'Pedro' or nome == 'João' or nome == 'Ana':
+      print('Seu nome é bem comum no Brasil.')
+  elif nome in 'Lara Sara Sophia Hadassa':
+      print('Seu nome é belíssimo, bem diferente.')
+  else:
+      print('Seu nome é bem normal.')
+  print(f'Tenha um bom dia, {nome}!')
   ```

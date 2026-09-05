@@ -259,11 +259,11 @@
   Como o próprio nome sugere, é uma estrutura de condição colocada dentro da outra (como um ninho).
 
   * **`elif` (else + if):** Significa "senão se". É usado quando precisamos tratar mais de dois caminhos possíveis.
-  
+
   * **Regras de Sintaxe:**
-  * Todo bloco começa sempre com um `if`, sempre! Nunca começamos com um `elif`.
-  * Você pode usar quantos `elif` precisar dentro de um mesmo bloco.
-  * O bloco `else` no final é opcional (não é obrigatório caso não tenha necessidade do uso.)
+    * Todo bloco começa sempre com um `if`, sempre! Nunca começamos com um `elif`.
+    * Você pode usar quantos `elif` precisar dentro de um mesmo bloco.
+    * O bloco `else` no final é opcional (não é obrigatório caso não tenha necessidade do uso.)
 
   #### Exemplo Prático 1: Status de Média Escolar
 

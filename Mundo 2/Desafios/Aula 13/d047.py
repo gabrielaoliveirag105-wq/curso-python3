@@ -3,9 +3,6 @@ print('----- DESAFIO 47 ------')
 
 print('--- SOMENTE NÚMEROS PARES --- ')
 
-from time import sleep
-for c in range(1, 50+1):
-    if c % 2 == 0:
-        print (c)
-        sleep(0.5)
+for c in range(2, 50+1,2):
+        print (c, end=' ')
 print('\033[4;33m\nPrograma finalizado!\033[m')

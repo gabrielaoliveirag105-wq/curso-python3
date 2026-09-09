@@ -9,7 +9,7 @@ amarelo = '\033[4;33m'
 
 print(f'{azul}--- CONTAGEM REGRESSIVA 💥 ---{limpa}')
 
-for c in range (10,0,-1):
+for c in range (10,-1,-1):
     print(c)
     sleep(1)
 print(f'{amarelo}FELIZ ANO-NOVO! SEJA BEM-VINDO 2027{limpa} 🎆')

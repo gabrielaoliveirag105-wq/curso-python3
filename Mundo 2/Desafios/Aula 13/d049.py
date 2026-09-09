@@ -15,6 +15,5 @@ print(f'{amarelo}\nGerando tabuada...{limpa}')
 sleep(1)
     
 for c in range (0, 10+1):
-    resul = c * num
-    print(f'{num} X {c} = {resul}')
+    print(f'{num} X {c} = {c * num}')
 print(f'{verde}Continue seus estudos, até a próxima!{limpa}')

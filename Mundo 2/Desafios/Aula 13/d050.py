@@ -4,11 +4,13 @@ print('----- DESAFIO 50 ------')
 print('--- CÁLCULO DOS VALORES PARES ---')
 
 soma = 0
+cont = 0
 for c in range(1,6+1):
     num = int(input(f'Digite o {c}° valor: '))
     if num % 2 == 0:
         soma = soma + num
-print(f'A soma dos valores pares vale: {soma}')
+        cont = cont + 1
+print(f'Foram digitados {cont} números pares \nA soma dos valores pares vale: {soma}')
 
 
 

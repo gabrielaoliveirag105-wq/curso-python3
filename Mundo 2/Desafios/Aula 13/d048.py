@@ -6,10 +6,13 @@ limpa = '\033[m'
 
 print(f'{verde}--- MÚLTIPLOS DE TRÊS ---{limpa}')
 
+total = 0
 soma = 0
-for c in range (1, 500+1):
-    if c % 3 == 0:
+
+for c in range (3, 500+1,3):
+    if c % 2 == 1:
         soma = soma + c
+        total = total + 1 # quantos números são múltiplos 
         print(c)
 
-print(f'\nA soma de todos os números múltiplos por 3 é: {verde}{soma}{limpa}')
+print(f'\nAo todo são {verde}{total}{limpa} números múltiplos por três \nA soma de todos os números múltiplos por 3 é: {verde}{soma}{limpa}')

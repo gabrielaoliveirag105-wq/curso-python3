@@ -297,3 +297,44 @@
       print('Seu nome é bem normal.')
   print(f'Tenha um bom dia, {nome}!')
   ```
+  ### Aula 13 - Estrutura de Repetição (for)
+  Nessa aula aprendi a utilizar o laço de repetição `for`. Permite a repetição de um bloco em uma quantidade específica de vezes, utilizando uma variável de controle.
+
+  * **OBS:** O Python **nunca considera o último valor** do intervalo no `range()`. Ele sempre para no último valor, ou seja, para contar até 10, precisamos configurar o intervalo até 11 (`1,11`).
+
+  #### Exemplos de Contagem e Passos
+  ```python
+  # Contagem simples (imprime de 1 até 10)
+  for c in range (1, 11):
+    print(c)
+  
+  # Contagem regressiva (O terceiro parâmetro "-1" indica o passo para trás)
+  for c in range (10, 0 -1):
+    print(c)
+  
+  # PUlando de 2 em 2 (passo)
+  for c in range (0, 11, 2):
+    print(c)
+  ```
+  #### Interação com Usuário e Acumuladores 
+  Podemos usar variáveis informadas pelo usuário para definir os limites do laço, além de usar variáveis externas como **acumuladores** (ex: `soma = soma + n`) para somar valores a cada repetição.
+
+  ```python
+  # Lendo os limites e o passo dinamicamente
+  i = int(input('Início: '))
+  f = int(input('Fim: '))
+  p = int(input('Escolha o passo: '))
+
+  for c in range(i, f + 1, p):
+      print(c)
+
+  # Acumulando valores dentro do laço
+  soma = 0
+  for c in range(0, 3):
+      n = int(input('Digite um valor: '))
+      soma = soma + n  # A soma acumula a cada volta
+  print(f'A soma total vale: {soma}')  # Exibido fora do laço
+  ```
+  
+    
+

@@ -298,6 +298,7 @@
   print(f'Tenha um bom dia, {nome}!')
   ```
   ### Aula 13 - Estrutura de Repetição (for)
+  
   Nessa aula aprendi a utilizar o laço de repetição `for`. Permite a repetição de um bloco em uma quantidade específica de vezes, utilizando uma variável de controle.
 
   * **OBS:** O Python **nunca considera o último valor** do intervalo no `range()`. Ele sempre para no último valor, ou seja, para contar até 10, precisamos configurar o intervalo até 11 (`1,11`).
@@ -335,6 +336,6 @@
       soma = soma + n  # A soma acumula a cada volta
   print(f'A soma total vale: {soma}')  # Exibido fora do laço
   ```
-  
+
     
 

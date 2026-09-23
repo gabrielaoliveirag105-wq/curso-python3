@@ -19,7 +19,8 @@ maior = 0
 opcao = 0
 
 while opcao != 5:
-    print('\n|    MENU INTELIGENTE    | '
+    print('\n--------------------------' \
+    '\n|    MENU INTELIGENTE    | '
     '\n-------------------------|'
     '\n| [1] Soma               | '
     '\n| [2] Multiplicar        | '
@@ -27,14 +28,14 @@ while opcao != 5:
     '\n| [4] Novos números      | '
     '\n| [5] Sair do programa   | '
     '\n|------------------------|')
-    opcao = int(input('Escolha sua opção: '))
+    opcao = int(input('>>>> Escolha sua opção: '))
 
     if opcao == 1:
         soma = n1 + n2
-        print(f'A soma do valor {n1} com {n2} é igual a {soma}.')
+        print(f'A soma entre {n1} + {n2} é = {soma}.')
     elif opcao == 2:
         mult = n1 * n2
-        print(f'O produto da multiplicação de {n1} com {n2} é igual a {mult}')
+        print(f'O produto da multiplicação de {n1} X {n2} é = {mult}')
     elif opcao == 3:
         if n1 > n2:
             maior = n1
@@ -52,5 +53,7 @@ while opcao != 5:
         print('Finalizando o programa...')
     else:
         print('\033[4;31mOpção Inválida. Tente novamente!\033[m')
+    print('=' * 44)
+    sleep(1)
 print('\033[1;33mFim do Menu Inteligente. Até a próxima.\033[m')
 

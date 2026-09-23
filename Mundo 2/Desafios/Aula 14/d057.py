@@ -12,11 +12,11 @@ sleep(1)
 
 nome = str(input('\nDigite seu nome: '))
 idade = int(input('Digite sua idade: '))
-sexo = str(input('Informe seu sexo: [F/M] ')).upper()
+sexo = str(input('Informe seu sexo: [F/M] ')).upper().strip()
 
 while sexo not in ['F', 'M']:
     print('\033[1;31mOpção Inválida. Tente novamente!\033[m')
-    sexo = str(input('Informe seu sexo: [F/M] ')).upper()
+    sexo = str(input('Informe seu sexo: [F/M] ')).upper().strip()
     c = c + 1
 
 sleep(1)

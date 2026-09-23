@@ -21,7 +21,7 @@ while jogador != computador:
     print('\n\033[1;31mAinda não acertou, tente novamente.\033[m')
     jogador = int(input('Em que número eu pensei: '))
     c = c + 1
-    paplpite = (c + 1) - 1
+    paplpite = paplpite + 1
 
     if (jogador == computador):
         print(f'\033[1;32m\nParabéns, eu pensei exatamente no número {computador} e você ganhou.\033[m')

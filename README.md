@@ -2,14 +2,17 @@
   Registrando meu aprendizado no Curso de Python do professor Gustavo Guanabara.
 
   ## Minha jornada em Python 3 - Curso em Vídeo
+
   Esse repositório foi criado para registrar toda a minha evolução, códigos e desafios com a linguagem Python.
 
   ## Progresso do Curso
+
   - [x] **Mundo 1:** Fundamentos *(Concluído! 🟢 )*
   - [ ] **Mundo 2:** Estruturas de Controle
   - [ ] **Mundo 3:**
 
   ## Mundo 1: Fundamentos
+
   Aulas assistidas e conceitos práticos aplicados até o momento:
 
   ### Aula 04 - Primeiros comandos em Python
@@ -23,6 +26,7 @@
   print('Olá', nome, '! Prazer em te conhecer!')
   ```
   ### Aula 05 - Instalando o PyCharm e o Python
+
   Configuração do ambiente de desenvolvimento para escrever os códigos.
 
   ### Aula 06 - Tipos Primitivos e Saídas de Dados
@@ -49,6 +53,7 @@
   Entendi a ordem de precedência que o computador utiliza para fazer contas e como realizar operações matemáticas básicas.
 
   #### Operadores Aritméticos 
+
   | Operador | Operação | Exemplo | Resultado |
   |   ---    |     ---  |   ---   |    ---    |
   |   `+`    | `Adição` | `5 + 2` |    `7`    |
@@ -60,6 +65,7 @@
   |   `**`   |`Potencia`| `5 ** 5`|    `25`   |
 
   #### Ordem de Precedência
+
   Quem vamos resolver primeiro em uma equação? 
 
   1. **`()` Parenteses:** Tudo dentro dele é resolvido primeiro.
@@ -92,6 +98,7 @@
     ```
 
   #### Alguns módulos vistos:
+
   * `math`: Biblioteca de funções matemáticas.
   * `random`: Biblioteca para gerar e escolher números/itens aleatoriamente.
   * `floor()`: Função que arredonda um número para baixo.
@@ -107,6 +114,7 @@
   * *Regra:* Para o Python, letras maiúsculas são completamentes diferentes das minúsculas (`A` , `a`).
 
   #### Fatiamento (Pegar pedaços da string)
+
   ```python
   frase = 'Curso em Vídeo Python
   print(frase[9]) # Retorna 'V'. A contagem inicia em 0, pegando o caractere da posição 9.
@@ -118,6 +126,7 @@
   print(frase[9::3]) # Retorna 'Venty'. Começa em 9, vai até o final (pois não mostra onde ele dev parar) pulando de 3 em 3.
   ```
   #### Análise de String
+
   ```python
   print(len(frase)) # Retorna 21. Verifica o tamanho total da frase em caracteres.
   print(frase.count('o')) # Retorna 3. Conta quantas letras 'o' minúsculas existem na frase.
@@ -128,6 +137,7 @@
   ```
 
   #### Transformação de Strings
+
   ```python
   print(frase.replace('Python', 'Android')) # Substitui 'Python' por 'Android' apenas na exibição.
   print(frase.upper()) # Transforma todas as letras em MAIÚSCULAS.
@@ -142,6 +152,7 @@
   *Combinando métodos:* É possível juntar transformações em sequência, o código `print(frase.upper().count('o'))` vai retornar `0`, pois o `.upper` transformou toda a frase em maiúscula, logo, não existe mais letras minúsculas para serem contadas.
 
   #### Divisão e Junção
+
   ```python
   print(frase.split()) # Divide a frase onde existem espaços, criando uma lista de palavras com novos índices.
   print('-'.join(frase)) # Junta os elementos inserindo o hífen entre cada caractere ('C-u-r-s-o...').
@@ -153,11 +164,13 @@
   para a editoração eletrônica.""")
   ```
   ### Aula 10 - Estruturas Condicionais (Parte 1)
+
   Nesta aula aprendi a criar desvios com as estruturas condicionais, permitindo que o programa siga caminhos diferentes, 
 
   * **Identação:** É o recuo do código para direita. No Python, ela serve para dizer quais comandos estão no bloco `if`, e os que estão no `else.` Tudo fora desse bloco SEMPRE irá aparecer, idependente do resultado da condição.
 
   #### Condicionais Simples
+
   Possui apenas o bloco `if` (Se). Se a condição for falsa, o programa ignora o bloco e segue em frente.
 
   ```python
@@ -167,6 +180,7 @@
   print(f'Bom dia, {nome}!') # esse bloco SEMPRE vai acontecer, está fora do bloco identado.
   ```
   #### Condicionais Compostas
+
   Possui o bloco `if` (Se) e o bloco `else` (Senão), abrindo dois caminhos possíveis no programa.
 
   ```python
@@ -181,6 +195,7 @@
   Ou será o bloco True, ou o False.
 
   #### Exemplo Prático: Cálculo de Média
+
   ```python
   n1 = float(input('Digite a primeira nota: '))
   n2 = float(input('Digite a segunda nota: '))
@@ -193,13 +208,16 @@
     print(f'Oba! Sua média foi {media:.1f}, continue assim!')
   ```
   ### Aula 11 - Cores no Terminal
+
   Nesta aula aprendi a usar o padrão **ANSI (escape sequence)** para adicionar cores e estilos aos textos exibidos no terminal.
 
   #### Estrutura do Código ANSI
+
   O código sempre começa com `\033[` e termina coma letra `m`. Entre eles, separamos por ponto e vírgula os códigos de **Estilo;Texto;Fundo**.
   * **Exemplo:** `print(\033[0;33;44m)` \ `0` (Estilo), `33` (Cor do Texto), `44` (Cor de Fundo).
 
   #### Tabelas de Referência ANSI
+
   | Código | Estilo de Texto|
   | ---    |    ---         | 
   | `0`    |   **Padrão**   |
@@ -219,6 +237,7 @@
   | `37` | Cinza | | `47` | Cinza |
 
   #### Prática e Fechamento de Cores
+
   * **DICA:** Sempre coloque `\033[m` no final do seu texto para **limpar a formatação**. Se não fizer isso, a cor vai continuar pintando todo o resto do terminal.
 
   ```python
@@ -228,6 +247,7 @@
   print('\033[7;40mTexto preto com fundo branco\033[m') 
   ```
   #### Aplicando Cores em Variáveis e f-strigns
+
   Podemos injetar os códigos ANSI diretamente dentro das chaves de uma f-string:
 
   ```python
@@ -239,6 +259,7 @@
   print(f'Muito prazer te conhecer, \033[4;36m{nome}\033[m!')
   ```
   #### Organizando com Dicionários (Método Avançado)
+
   Para não precisar ficar digitando códigos confusos no meio do texto, podemos criar um dicionário de cores. Isso deixa o código muito mais limpo e legível!
 
   ```python
@@ -252,6 +273,7 @@
   print(f'Olá, {cores["amarelo"]}{nome}{cores["limpa"]}! Seja muito bem-vindo(a).')
   ```
   ## Mundo 2: Estruturas De Controle
+
   Aulas assistidas e conceitos práticos aplicados nesta nova etapa: 
 
   ### Aula 12 - Condições Aninhadas
@@ -261,6 +283,7 @@
   * **`elif` (else + if):** Significa "senão se". É usado quando precisamos tratar mais de dois caminhos possíveis.
 
   * **Regras de Sintaxe:**
+
     * Todo bloco começa sempre com um `if`, sempre! Nunca começamos com um `elif`.
     * Você pode usar quantos `elif` precisar dentro de um mesmo bloco.
     * O bloco `else` no final é opcional (não é obrigatório caso não tenha necessidade do uso.)
@@ -282,6 +305,7 @@
   ```
 
   #### Exemplo Prático 2: Análise de Nomes Populares
+
   Testando o uso do `elif` combinado com os operadores lógicos `or` e o operador de pertencimento `in`:
 
   ```python
@@ -304,6 +328,7 @@
   * **OBS:** O Python **nunca considera o último valor** do intervalo no `range()`. Ele sempre para no último valor, ou seja, para contar até 10, precisamos configurar o intervalo até 11 (`1,11`).
 
   #### Exemplos de Contagem e Passos
+
   ```python
   # Contagem simples (imprime de 1 até 10)
   for c in range (1, 11):
@@ -318,6 +343,7 @@
     print(c)
   ```
   #### Interação com Usuário e Acumuladores 
+
   Podemos usar variáveis informadas pelo usuário para definir os limites do laço, além de usar variáveis externas como **acumuladores** (ex: `soma = soma + n`) para somar valores a cada repetição.
 
   ```python
@@ -336,9 +362,41 @@
       soma = soma + n  # A soma acumula a cada volta
   print(f'A soma total vale: {soma}')  # Exibido fora do laço
   ```
-  #### Aula 14 - Estrutura de Repetição (while)
-  Nesta aula aprendi a usar a estrutura de repetição `while`, que é uma estrutura com ***teste lógico**, e diferente da estrutura `for`, não é necessário ter um limite fixo, ou seja, o `while` continua executando um bloco de comando por tempo indeterminado, enquanto a condição testada for verdadeira (`True`).
+  ### Aula 14 - Estrutura de Repetição (while)
+
+  Nesta aula aprendi a usar a estrutura de repetição `while`, que é uma estrutura com **teste lógico**.
+
+  Diferente da estrutura `for`, não é necessário ter um limite fixo, ou seja, o `while`, continua executando um bloco de comando por tempo indeterminado, enquanto a condição testada for verdadeira (`True`).
 
   É ideial para quando não sabemos exatamente quantas vezes o loop precisará rodar.
-    
+
+  #### Exemplos Práticos de Loop com Contador e Flag (Ponto de Parada)
+
+  ```python
+  # Contagem simples utilizando o while como se fosse o for
+  c = 0
+  while c < 10:
+    c = c + 1
+    print(c)
+  
+  # Loop com ponto de parada (Flag). O programa vai rodar até o usuário digitar "0".
+  num = 1
+  while n != 0:
+    n = int(input('Escolha um número [0 para parar]: '))
+  print('Fim do programa!')
+  ```
+  ---
+
+  #### Interação com o Usuário
+
+  Podemos usar o `while` para dar controle ao usuário sobre a continuidade dele.
+
+  ```python
+  r = 'S'
+  while r == 'S':
+    n = int(input('Digite um número: '))
+    r = str(input('Você quer continuar? [S/N]' )).upper().strip()
+  ```
+ 
+
 

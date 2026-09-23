@@ -38,7 +38,9 @@
     - `float`: números reais (-3.5, 2.1, 67.8, 0.0)
     - `bool`: valores lógicos (True ou False)
     - `str`: tudo que está entre  aspas simples ou duplas ('Olá', '78', '3.5')
-    
+  
+  ---
+  
   * **Código exemplo:**
   ``` python
   n1 = int(input('Escolha um número: '))
@@ -63,6 +65,8 @@
   |   `//`   | `Div.Int`| `5 // 2`|    `2`    |
   |   `%`    |`Rest.Div`| `5 % 2` |    `1`    |
   |   `**`   |`Potencia`| `5 ** 5`|    `25`   |
+
+  ---
 
   #### Ordem de Precedência
 
@@ -96,6 +100,7 @@
     raiz = sqrt(num) # Não tem necessidade do 'math'
     print(f'A raiz é {raiz:.2f}, e arredondada para baixo é {floor(raiz)}.')
     ```
+    ---
 
   #### Alguns módulos vistos:
 
@@ -125,6 +130,8 @@
   print(frase[15:]) # Retorna 'Python'. Começa no índice 15 e vai até o final.
   print(frase[9::3]) # Retorna 'Venty'. Começa em 9, vai até o final (pois não mostra onde ele dev parar) pulando de 3 em 3.
   ```
+  ---
+
   #### Análise de String
 
   ```python
@@ -135,6 +142,7 @@
   print(frase.find('Android')) # Retorna -1. Quando você procura algo que não existe, o resultado é sempre -1.
   print('Curso' in frase) # Retorna True. Verifica se a palavra existe na frase e retorna True ou False.
   ```
+  ---
 
   #### Transformação de Strings
 
@@ -151,6 +159,8 @@
 
   *Combinando métodos:* É possível juntar transformações em sequência, o código `print(frase.upper().count('o'))` vai retornar `0`, pois o `.upper` transformou toda a frase em maiúscula, logo, não existe mais letras minúsculas para serem contadas.
 
+  ---
+
   #### Divisão e Junção
 
   ```python
@@ -158,6 +168,7 @@
   print('-'.join(frase)) # Junta os elementos inserindo o hífen entre cada caractere ('C-u-r-s-o...').
   ```
   *Dica para texto:* Para escrevar um texto com várias linhas sem precisar escrever inúmeros `print()`, coloque o texto dentro de três aspas duplas ***(""")***, abrindo e fechando seu texto.
+
   ```python
   print("""Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica.
   Ele sobreviveu não apenas a muitas décadas, mas também à transição 
@@ -169,6 +180,8 @@
 
   * **Identação:** É o recuo do código para direita. No Python, ela serve para dizer quais comandos estão no bloco `if`, e os que estão no `else.` Tudo fora desse bloco SEMPRE irá aparecer, idependente do resultado da condição.
 
+  ---
+
   #### Condicionais Simples
 
   Possui apenas o bloco `if` (Se). Se a condição for falsa, o programa ignora o bloco e segue em frente.
@@ -179,6 +192,8 @@
     print('Nossa, que nome lindo!') # esse bloco só acontece se o nome for Gabriela
   print(f'Bom dia, {nome}!') # esse bloco SEMPRE vai acontecer, está fora do bloco identado.
   ```
+  ---
+
   #### Condicionais Compostas
 
   Possui o bloco `if` (Se) e o bloco `else` (Senão), abrindo dois caminhos possíveis no programa.
@@ -193,6 +208,8 @@
   ```
   * **OBS:** As duas condições nunca acontecem juntas ao mesmo tempo. 
   Ou será o bloco True, ou o False.
+
+  ---
 
   #### Exemplo Prático: Cálculo de Média
 
@@ -225,6 +242,8 @@
   | `4`    | **Sublinhado** |
   | `7`    |   **Inversão** | # (inverte as cores de texto e fundo)
 
+  ---
+
   | Código Texto | Cor do Texto | | Código Fundo | Cor de Fundo |
   | :---: | :--- | :---: | :---: | :--- |
   | `30` | Branco | | `40` | Branco |
@@ -236,6 +255,8 @@
   | `36` | Ciano (Azul Piscina) | | `46` | Ciano (Azul Piscina) |
   | `37` | Cinza | | `47` | Cinza |
 
+  ---
+
   #### Prática e Fechamento de Cores
 
   * **DICA:** Sempre coloque `\033[m` no final do seu texto para **limpar a formatação**. Se não fizer isso, a cor vai continuar pintando todo o resto do terminal.
@@ -246,6 +267,8 @@
   # O código 7 inverte as configurações originais (Texto vira Fundo e vice-versa)
   print('\033[7;40mTexto preto com fundo branco\033[m') 
   ```
+  ---
+
   #### Aplicando Cores em Variáveis e f-strigns
 
   Podemos injetar os códigos ANSI diretamente dentro das chaves de uma f-string:
@@ -258,6 +281,8 @@
   nome = 'Gabriela'
   print(f'Muito prazer te conhecer, \033[4;36m{nome}\033[m!')
   ```
+  ---
+
   #### Organizando com Dicionários (Método Avançado)
 
   Para não precisar ficar digitando códigos confusos no meio do texto, podemos criar um dicionário de cores. Isso deixa o código muito mais limpo e legível!
@@ -303,6 +328,7 @@
     print(f'Sua nota foi {media:.1f} \nALUNO APROVADO!')
   print('Continua sempre estudando')
   ```
+  ---
 
   #### Exemplo Prático 2: Análise de Nomes Populares
 
@@ -342,6 +368,8 @@
   for c in range (0, 11, 2):
     print(c)
   ```
+  ---
+
   #### Interação com Usuário e Acumuladores 
 
   Podemos usar variáveis informadas pelo usuário para definir os limites do laço, além de usar variáveis externas como **acumuladores** (ex: `soma = soma + n`) para somar valores a cada repetição.

@@ -336,6 +336,9 @@
       soma = soma + n  # A soma acumula a cada volta
   print(f'A soma total vale: {soma}')  # Exibido fora do laço
   ```
+  #### Aula 14 - Estrutura de Repetição (while)
+  Nesta aula aprendi a usar a estrutura de repetição `while`, que é uma estrutura com ***teste lógico**, e diferente da estrutura `for`, não é necessário ter um limite fixo, ou seja, o `while` continua executando um bloco de comando por tempo indeterminado, enquanto a condição testada for verdadeira (`True`).
 
+  É ideial para quando não sabemos exatamente quantas vezes o loop precisará rodar.
     
 

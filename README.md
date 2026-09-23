@@ -40,7 +40,7 @@
     - `str`: tudo que está entre  aspas simples ou duplas ('Olá', '78', '3.5')
   
   ---
-  
+
   * **Código exemplo:**
   ``` python
   n1 = int(input('Escolha um número: '))
@@ -425,6 +425,9 @@
     n = int(input('Digite um número: '))
     r = str(input('Você quer continuar? [S/N]' )).upper().strip()
   ```
+  ---
+
+  ### Aula 15 - Interrompendo Repetições while (while True)
  
 
 

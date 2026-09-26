@@ -8,7 +8,7 @@
   ## Progresso do Curso
 
   - [x] **Mundo 1:** Fundamentos *(Concluído! 🟢 )*
-  - [ ] **Mundo 2:** Estruturas de Controle
+  - [x] **Mundo 2:** Estruturas de Controle *(Concluído! 🟢)*
   - [ ] **Mundo 3:**
 
   ## Mundo 1: Fundamentos
@@ -428,6 +428,37 @@
   ---
 
   ### Aula 15 - Interrompendo Repetições while (while True)
+
+  Nesta aula aprendi a criar loops infinitos usando o comando `while True`, e como interroper um laço utilizando a instrução `break`. Recomendamos utilizar quando não sabemos o momento que o usuário irá para.
+
+  * **`while True:`** Faz com que a condição do loop seja sempre verdadeira, ou seja, irá rodar para sempŕe até um comando de interrupição.
+
+  * **`break`:** É o comando de interrupição.
+
+  #### Exemplo de Loop Infinito
+
+  ```python
+  c = 1
+  while True:
+    print(c, end=' -> ')
+    c = c + 1
+    # Se não criarmos um ponto de parada, esse programa irá rodar para sempre.
+  ```
+  #### Utilizando o Comando `break`
+  * *Aprendizado:* A checagem do ponto de parada (`if n == 999: break`) deve vir **antes** do acumulador (`s = s + n`). Dessa forma, o número usado para sair do programa (a Flag) nunca é somado ao resultado final. A ordem faz diferença.
+
+  ```python
+  n = s = 0
+
+  while True:
+    n = int(input('Escolha um número [999 para parar]: '))
+    if n == 999:
+      break # Ponto de parada
+    s = s + 1 # A soma só ocorre se o número NÃO for 999
+
+  print(f'A soma dos valores digitados vale {s}')
+  ```
+
  
 
 

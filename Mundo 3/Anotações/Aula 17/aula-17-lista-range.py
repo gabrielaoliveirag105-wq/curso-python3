@@ -10,5 +10,3 @@ valores.sort(reverse=True) # mostra os elementos de forma invertida (decrescente
 
 print(valores)
 print(valores)
-
-

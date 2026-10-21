@@ -18,4 +18,4 @@ print(f'Os valores da lista em ordem decrescente fica: {numeros}')
 if 5 in numeros:
     print('O valor 5 faz parte da lista!')
 else:
-    print("O valor 5 não foi achado na lista!")
+    print('O valor 5 não foi achado na lista!')
